@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="I Resisted">
+  <!--
+    The browser-tab mark.
+
+    Deliberately not the same drawing as components/mark.tsx. That one is built
+    for 30–148px, where a 2px ring, a 1.4px beam and a soft radial orb all read
+    clearly. Rendered into a 16px tab those become sub-pixel and the whole thing
+    turns into a faint smudge — which is what the pale-gold-on-cream icon.png
+    was doing.
+
+    So the proportions are redrawn for the small end: a dark ground the gold can
+    actually sit on, roughly three times the stroke weight, a solid orb instead
+    of a gradient, and the glow dropped entirely because it only adds mush once
+    downsampled. Same shape, same reading — ring, orb, beam — just built to
+    survive being tiny.
+  -->
+  <rect width="100" height="100" fill="#100C08"/>
+  <circle cx="50" cy="50" r="36" fill="none" stroke="#C9A24B" stroke-width="7"/>
+  <rect x="46.6" y="30" width="6.8" height="46" fill="#C9A24B"/>
+  <circle cx="50" cy="30" r="12" fill="#F2E3BE"/>
+</svg>
